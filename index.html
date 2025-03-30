@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LightPage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+<!-- Barra Superior -->
+  <div class="top-menu-container">
+    <div class="top-menu-scroll">
+      <button data-tab="tab1">
+        <svg class="button-icon" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M8 3v2H4v14h16V5h-4V3h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4zm5 2l-5 5h3v4h4v-4h3l-5-5z"/>
+        </svg>
+       
+      </button>
+      
+
+
+      <button data-tab="tab1"><i class="fas fa-tv"></i> TV</button>
+  <button data-tab="tab2"><i class="fas fa-newspaper"></i> Jornal</button>
+  <button data-tab="tab3"><i class="fas fa-hashtag"></i> Redes</button>
+  <button data-tab="tab4"><i class="fas fa-user-friends"></i> Seguindo</button>
+  <!-- Ícones disponíveis em: https://fontawesome.com/icons -->
+      <button data-tab="tab1">TV</button>
+      <button data-tab="tab2">Jornal</button>
+      <button data-tab="tab3">Redes Sociais</button>
+      <button data-tab="tab4">Seguindo</button>
+      <button data-tab="tab5">Mídia</button>
+      <button data-tab="tab6">Postagens</button>
+      <button data-tab="tab1">TV</button>
+      <button data-tab="tab2">Jornal</button>
+      <button data-tab="tab3">Redes Sociais</button>
+      <button data-tab="tab4">Seguindo</button>
+      <button data-tab="tab5">Mídia</button>
+      <button data-tab="tab6">Postagens</button>
+      <button data-tab="tab1">TV</button>
+      <button data-tab="tab2">Jornal</button>
+      <button data-tab="tab3">Redes Sociais</button>
+      <button data-tab="tab4">Seguindo</button>
+      <button data-tab="tab5">Mídia</button>
+      <button data-tab="tab6">Postagens</button>
+      <!-- Adicione quantos botões quiser -->
+    </div>
+  </div>
+
+  <!-- Barra Superior
+  <div class="top-menu">
+    <button data-tab="tab1">TV</button>
+    <button data-tab="tab2">Jornal</button>
+  </div>
+
+ -->
+
+
+
+
+  <!-- Barra Lateral Esquerda (Controle) -->
+  <div class="side-bar left" id="left-bar"></div>
+
+  <!-- Menu Lateral Esquerdo -->
+  <aside class="side-menu left" id="left-menu">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="#">Tutorial</a></li>
+      <li><a href="#">Canal</a></li>
+    </ul>
+  </aside>
+
+  <!-- Barra Lateral Direita (Controle) -->
+  <div class="side-bar right" id="right-bar"></div>
+
+  <!-- Menu Lateral Direito -->
+  <aside class="side-menu right" id="right-menu">
+    <h2>$</h2>
+    <ul>
+      <li><a href="#">Salas</a></li>
+      <li><a href="#">Projetos</a></li>
+    </ul>
+  </aside>
+
+
+
+  <!-- Área de Chat com AI -->
+<div class="ai-chat-container">
+  <!-- Área de Resposta da AI (minimizada por padrão) -->
+  <div class="ai-response-box">
+    <div class="ai-response-header">
+      <span>Resposta da AI</span>
+      <button class="expand-btn">↑↓</button>
+    </div>
+    <div class="ai-response-content"></div>
+  </div>
+
+  <!-- Área de Input do Usuário (sempre visível) -->
+  <div class="ai-input-box">
+    <textarea placeholder="Digite sua mensagem para a AI..." rows="1"></textarea>
+    <button class="send-btn">Enviar</button>
+  </div>
+</div>
+
+
+
+
+<!-- BOXES USUARIO E AMIGOS -->
+<!-- Box Perfil (Esquerda) -->
+<div class="profile-box" onclick="window.location.href='perfil.html'">
+  <div class="box-header">
+    <i class="fas fa-user"></i>
+    <h3>Seu Perfil</h3>
+  </div>
+  <div class="box-content">
+    <img src="public/avatar-default.jpg" alt="Avatar" class="avatar">
+    <p>@usuário</p>
+  </div>
+</div>
+
+<!-- Box Amizades (Direita) -->
+<div class="friends-box" onclick="window.location.href='amizades.html'">
+  <div class="box-header">
+    <i class="fas fa-users"></i>
+    <h3>Amizades</h3>
+  </div>
+  <div class="box-content">
+    <div class="friend-grid">
+      <img src="public/avatar1.jpg" alt="Amigo 1">
+      <img src="public/avatar2.jpg" alt="Amigo 2">
+      <img src="public/avatar3.jpg" alt="Amigo 3">
+    </div>
+    <p>12 conexões</p>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
