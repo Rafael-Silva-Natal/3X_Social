@@ -49,13 +49,17 @@
     </div>
   </div>
 
-  <!-- Barra Superior
-  <div class="top-menu">
-    <button data-tab="tab1">TV</button>
-    <button data-tab="tab2">Jornal</button>
-  </div>
+  <!-- teste de buscador-->
 
- -->
+  <!-- Barra de Busca -->
+<div class="search-container">
+  <div class="search-box">
+    <input type="text" placeholder="Buscar páginas, amigos ou conteúdos..." class="search-input">
+    <button class="search-btn">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+</div>
 
 
 
@@ -87,23 +91,19 @@
 
 
   <!-- Área de Chat com AI -->
-<div class="ai-chat-container">
-  <!-- Área de Resposta da AI (minimizada por padrão) -->
-  <div class="ai-response-box">
-    <div class="ai-response-header">
-      <span>Resposta da AI</span>
-      <button class="expand-btn">↑↓</button>
+  <div class="ai-chat-container">
+    <!-- Caixa de Resposta -->
+    <div class="ai-response-box" id="responseBox">
+      <div class="ai-response-content" id="responseContent"></div>
     </div>
-    <div class="ai-response-content"></div>
+    
+    <!-- Área de Input com ambos os botões -->
+    <div class="ai-input-box">
+      <textarea placeholder="Digite sua mensagem..." rows="1"></textarea>
+      <button class="expand-btn" id="expandBtn">↑↓</button>
+      <button class="send-btn">Enviar</button>
+    </div>
   </div>
-
-  <!-- Área de Input do Usuário (sempre visível) -->
-  <div class="ai-input-box">
-    <textarea placeholder="Digite sua mensagem para a AI..." rows="1"></textarea>
-    <button class="send-btn">Enviar</button>
-  </div>
-</div>
-
 
 
 
@@ -115,8 +115,8 @@
     <h3>Seu Perfil</h3>
   </div>
   <div class="box-content">
-    <img src="public/avatar-default.jpg" alt="Avatar" class="avatar">
-    <p>@usuário</p>
+    <img src="imagens/perfil 2.jpg" alt="Avatar" class="avatar">
+    <p>Rafael Silva</p>
   </div>
 </div>
 
@@ -128,11 +128,13 @@
   </div>
   <div class="box-content">
     <div class="friend-grid">
-      <img src="public/avatar1.jpg" alt="Amigo 1">
-      <img src="public/avatar2.jpg" alt="Amigo 2">
-      <img src="public/avatar3.jpg" alt="Amigo 3">
+      <img src="imagens/6.PNG" alt="Amigo 1">
+      <img src="imagens/2.PNG" alt="Amigo 2">
+      <img src="imagens/3.PNG" alt="Amigo 3">
+      <img src="imagens/4.PNG" alt="Amigo 1">
+      <img src="imagens/5.PNG" alt="Amigo 2">
+      <img src="imagens/1r.PNG" alt="Amigo 3">
     </div>
-    <p>12 conexões</p>
   </div>
 </div>
 
