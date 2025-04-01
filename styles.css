@@ -354,15 +354,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* Header das Boxes */
 .box-header {
   padding: 10px;
@@ -438,7 +429,7 @@ body {
 /* Container da Busca */
 .search-container {
   position: absolute;
-  top: 650px;/*70px*/
+  top: 630px;/*70px*/
   left: 50%;
   transform: translateX(-50%);
   width: 20%;
