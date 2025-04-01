@@ -313,12 +313,23 @@ body {
 
 /*BOXES USUARIO E AMIGOS*/
 
-/* Estilos Gerais das Boxes */
-.profile-box{
-  position: absolute;
-  top: 610px; /* Posição alinhada à barra de chat */
+
+/* Container das Boxes Fixas */
+.boxes-container {
+  position: fixed;
+  bottom: -25px;
+  left: 50px;/*distancia da borda*/
+  right: 50px;/*distancia da borda*/
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* Permite clicar através das áreas vazias */
+  z-index: 450;
+}
+
+/* Estilo Base para Ambas as Boxes */
+.profile-box, .friends-box {
+  position: relative;
   width: 150px;
-  height: 150px;
   background: rgba(30, 30, 30, 0.9);
   border-radius: 8px;
   border: 1px solid rgba(102, 97, 101, 0.5);
@@ -326,28 +337,31 @@ body {
   transition: all 0.3s;
   z-index: 400;
   overflow: hidden;
+  pointer-events: auto; /* Permite interação */
+  margin: 0 20px;
 }
 
-.friends-box {
-  position: absolute;
-  top: 570px; /* Posição alinhada à barra de chat */
-  width: 200px;
-  background: rgba(30, 30, 30, 0.9);
-  border-radius: 8px;
-  border: 1px solid rgba(102, 97, 101, 0.5);
-  cursor: pointer;
-  transition: all 0.3s;
-  z-index: 400;
-  overflow: hidden;
-}
-
+/* Box de Perfil Específica */
 .profile-box {
-  left: calc(27.5% - 320px); /* Posição à esquerda do chat */
+  height: 150px;
+  margin-right: auto; /* Alinha à esquerda */
 }
 
+/* Box de Amizades Específica */
 .friends-box {
-  right: calc(27.5% - 320px); /* Posição à direita do chat */
+  width: 200px;
+  margin-left: auto; /* Alinha à direita */
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Header das Boxes */
 .box-header {

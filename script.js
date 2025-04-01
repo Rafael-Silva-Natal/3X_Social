@@ -92,7 +92,6 @@ document.querySelector('.send-btn').addEventListener('click', function() {
 
 
 
-
 //BOXES USUARIOS E AMIGOS
 
 // Efeito de carregamento (simulado)
@@ -109,6 +108,24 @@ document.querySelectorAll('.profile-box, .friends-box').forEach(box => {
   });
 });
 
+
+//zoom das boxes
+
+// Ajuste das boxes no redimensionamento
+function adjustBoxesPosition() {
+  const chatContainer = document.querySelector('.ai-chat-container');
+  if (!chatContainer) return;
+  
+  const chatRect = chatContainer.getBoundingClientRect();
+  const boxesContainer = document.querySelector('.boxes-container');
+  
+  // Posiciona as boxes acima do chat com margem
+  boxesContainer.style.bottom = `${chatRect.height + -34}px`;
+}
+
+// Executa no carregamento e no redimensionamento
+window.addEventListener('load', adjustBoxesPosition);
+window.addEventListener('resize', adjustBoxesPosition);
 
 
 
